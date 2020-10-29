@@ -9,7 +9,7 @@
 | **UIKit**      | `-sizeToFit:`                                  | ✅       |
 | **CoreText**   | `CTFramesetterSuggestFrameSizeWithConstraints` | ✅       |
 
-
+<br>
 
 ### Preparing data for experiments
 
@@ -19,7 +19,7 @@ UIFont*   font = [UIFont fontWithName:@"Arial" size:17];
 float    width = 300;
 ```
 
-
+<br>
 
 ### Foundation
 
@@ -31,7 +31,7 @@ CGRect frame = [text boundingRectWithSize:boundingSize
 CGSize roundedSize = CGRectIntegral(CGRectMake(0, 0, frame.size.width, frame.size.height)).size;
 ```
 
-
+<br>
 
 ### UIKit
 
@@ -45,7 +45,7 @@ label.text = text;
 CGSize roundedSize = CGRectIntegral(CGRectMake(0, 0, label.frame.size.width, label.frame.size.height)).size;
 ```
 
-
+<br>
 
 ### CoreText
 
@@ -66,7 +66,7 @@ CGSize roundedSize2 = CGRectIntegral(CGRectMake(0, 0, suggestedSize.width, sugge
 CFRelease(frameSetter);
 ```
 
-
+<br>
 
 ### Additionally
 
@@ -79,6 +79,8 @@ NSLog(@"\t result time = %.5f",CFAbsoluteTimeGetCurrent() - beginTimeBenckmark);
 ```
 
 
+
+<br>
 
 #### Supporting NSAttributedString
 
@@ -116,7 +118,7 @@ self.label.attributedText = attributedString;
 NSLog(@"%@",attributedString);
 ```
 
-
+<br>
 
 ### Test results
 
@@ -226,7 +228,7 @@ The following are indicators for calculating text dimensions
 ------------------------------------------------------------------------
 ```
 
-
+<br><br>
 
 ### Useful material
 
